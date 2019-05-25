@@ -1,0 +1,53 @@
+Inner Join-
+selects only the entries that have match between columns:
+EX:select teacher.name,dept.name
+from teacher
+inner join dept 
+on(teacher.dept=dept.id)
+Output:
+name	name
+Shrivell	Computing
+Throd	Computing
+Splint	Computing
+Cutflower	Design
+##########
+Left Join-
+ Select records from the first (left-most) table with matching right table records.
+ EX:select teacher.name,dept.name
+from teacher
+left join dept 
+on(teacher.dept=dept.id)
+Output:
+name	name
+Shrivell	Computing
+Throd	Computing
+Splint	Computing
+Spiregrain	
+Cutflower	Design
+Deadyawn	
+################
+Right Join-
+Select records from the second (right-most) table with matching left table records.
+EX:
+select teacher.name,dept.name
+from teacher
+right join dept 
+on(teacher.dept=dept.id)
+Output:
+name	name
+Shrivell	Computing
+Throd	Computing
+Splint	Computing
+Cutflower	Design
+Engineering
+################
+Full Join-
+############################################################################
+COALESCE
+COALESCE takes any number of arguments and returns the first value that is not null.
+COALESCE(x,y,z) = x if x is not NULL
+COALESCE(x,y,z) = y if x is NULL and y is not NULL
+COALESCE(x,y,z) = z if x and y are NULL but z is not NULL
+COALESCE(x,y,z) = NULL if x and y and z are all NULL
+
+
