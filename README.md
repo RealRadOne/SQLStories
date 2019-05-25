@@ -1,5 +1,5 @@
 # SQLStories
-This Repo Consists solution to SQL Exercises from
+This Repo consists of solutions to SQL Exercises from
 
 1.SQLZoo                    
 http://sqlzoo.net
